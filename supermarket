@@ -1,0 +1,170 @@
+///////////////////////////////////////VIDHYA.E////////////////////////////////////////
+//////////////////////////////KCG COLLEGE OF TECHNOLOGY//////////////////////////////////
+
+
+//supermarket management system
+/*  1. welcome message
+    2. list of items (5-10 items display those items using cout)
+    3. chosse your item (for every item , create a class . In that class , rate of basic quantity)
+    4. last total cost (add all the rate)
+*/
+#include <iostream>
+using namespace std;
+//onion price 
+float onion(){
+    cout<<"Onion 1kg = Rs 25";
+    float quantity ;
+    cout<<"\n Enter the quantity :";cin>>quantity;
+    cout<<"The total cost is="<<quantity*25;
+    return quantity*25;
+}
+// Tomato price
+float tomato(){
+    cout<<"Tomato 1kg = Rs 25";
+    float quantity ;
+    cout<<"\n Enter the quantity :";cin>>quantity;
+    cout<<"The total cost is="<<quantity*25;
+        return quantity*25;
+}
+//Potato price
+float potato(){
+    cout<<"Potato 1kg = Rs 35";
+    float quantity ;
+    cout<<"\n Enter the quantity :";cin>>quantity;
+    cout<<"The total cost is="<<quantity*35;
+        return quantity*35;
+}
+//beetroot price
+float beetroot(){
+    cout<<"Beetroot 1kg = Rs 40";
+    float quantity ;
+    cout<<"\n Enter the quantity :";cin>>quantity;
+    cout<<"The total cost is="<<quantity*40;
+        return quantity*40;
+}
+//Carrot price
+float carrot(){
+    cout<<"Carrot 1kg = Rs 50";
+    float quantity ;
+    cout<<"\n Enter the quantity :";cin>>quantity;
+    cout<<"The total cost is="<<quantity*50;
+        return quantity*50;
+
+}
+//Califlower price
+float cauliflower(){
+    cout<<"Cauliflower 1kg = Rs 50";
+    float quantity ;
+    cout<<"\n Enter the quantity :";cin>>quantity;
+    cout<<"The total cost is="<<quantity*50;
+        return quantity*50;
+}
+//Brinjal price
+float brinjal(){
+    cout<<"Brinjal 1kg = Rs 37";
+    float quantity ;
+    cout<<"\n Enter the quantity :";cin>>quantity;
+    cout<<"The total cost is="<<quantity*37;
+        return quantity*37;
+}
+// Cabbage price
+float cabbage(){
+    cout<<"Cabbage 1kg = Rs 50";
+    float quantity ;
+    cout<<"\n Enter the quantity :";cin>>quantity;
+    cout<<"The total cost is="<<quantity*50;
+        return quantity*50;
+}
+//Peas price
+float peas(){
+    cout<<"Peas 1kg = Rs 50";
+    float quantity ;
+    cout<<"\n Enter the quantity :";cin>>quantity;
+    cout<<"The total cost is="<<quantity*50;
+        return quantity*50;
+}
+// Mushroom price
+float mushroom(){
+    cout<<"Mushroom 1kg = Rs 100";
+    float quantity ;
+    cout<<"\n Enter the quantity :";cin>>quantity;
+    cout<<"The total cost is="<<quantity*100;
+        return quantity*100;
+}
+//Broccoli price
+float broccoli(){
+    cout<<"Broccoli 1kg = Rs 60";
+    float quantity ;
+    cout<<"\n Enter the quantity :";cin>>quantity;
+    cout<<"The total cost is="<<quantity*60;
+        return quantity*60;
+}
+//Capsicum price
+float capsicum(){
+    cout<<"Capsicum 1kg = Rs 65";
+    float quantity ;
+    cout<<"\n Enter the quantity :";cin>>quantity;
+    cout<<"The total cost is="<<quantity*65;
+        return quantity*65;
+}
+int main()
+{
+     int option;
+    float baseamount, totalamount,a,b,c,d,e,f,g,h,i,j,k,l;
+    // Home page
+    cout<<"\t\tWelcome Vidhya's Supermarket";
+    //Options
+    start:
+    cout<<"\n 1.Onion \n2.Tomato \n3.Potato \n4.Beetroot \n5.Carrot \n6.Cauliflower \n7.Brinjal \n8.Cabbage \n9.Peas \n10.Broccoli \n11.Mushroom \n12.Capsicum";
+    // Enter your choice
+     cout<<"\nEnter your choice:";cin>>option;
+      switch(option){
+          case 1:
+          a=onion();
+          break;
+          case 2:
+          b=tomato();
+          break;
+          case 3:
+          c=potato();
+          break;
+          case 4:
+          d=beetroot();
+          break;
+          case 5:
+          e=carrot();
+          break;
+          case 6:
+          f=cauliflower();
+          break;
+          case 7:
+          g=brinjal();
+          break;
+          case 8:
+          h=cabbage();
+          break;
+          case 9:
+          i=peas();
+          break;
+          case 10:
+          j=broccoli();
+          break;
+          case 11:
+          k=mushroom();
+          break;
+          case 12:
+          l=capsicum();
+          break;
+          
+      }
+      //Calculating Overall cast
+      totalamount=a+b+c+d+e+f+g+h+i+j+k+l;
+      cout<<"\nOverall  total cost is:"<<totalamount;
+      //End page
+      goto start;
+      
+    
+    
+
+    return 0;
+}
